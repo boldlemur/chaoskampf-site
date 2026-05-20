@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy — Chaoskampf</title>
+<meta name="description" content="Privacy policy for Chaoskampf.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500&family=JetBrains+Mono:wght@400&family=Inter+Tight:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --ink: #0a0a0b;
+  --paper: #f4f1ea;
+  --rule-soft: rgba(244, 241, 234, 0.08);
+  --ember: #d4622a;
+  --muted: rgba(244, 241, 234, 0.55);
+  --muted-strong: rgba(244, 241, 234, 0.75);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  background: var(--ink);
+  color: var(--paper);
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.035;
+  z-index: 100;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+a {
+  color: var(--ember);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 200ms ease;
+}
+
+a:hover { border-bottom-color: var(--ember); }
+
+nav {
+  padding: 1.5rem 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.nav-mark {
+  font-family: 'Fraunces', serif;
+  font-weight: 500;
+  font-size: 1.1rem;
+  letter-spacing: -0.02em;
+  text-transform: none;
+  color: var(--paper);
+  border: none;
+}
+
+.nav-back {
+  color: var(--muted-strong);
+  border: none;
+}
+
+.nav-back:hover { color: var(--ember); }
+
+main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 5rem 2.5rem 8rem;
+}
+
+.eyebrow {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--ember);
+  margin-bottom: 1.5rem;
+}
+
+h1 {
+  font-family: 'Fraunces', serif;
+  font-weight: 300;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  line-height: 1;
+  letter-spacing: -0.03em;
+  margin-bottom: 1rem;
+}
+
+.updated {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
+  color: var(--muted);
+  letter-spacing: 0.05em;
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--rule-soft);
+}
+
+h2 {
+  font-family: 'Fraunces', serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  letter-spacing: -0.02em;
+  margin: 3rem 0 1rem;
+  color: var(--paper);
+}
+
+p {
+  color: var(--muted-strong);
+  margin-bottom: 1.25rem;
+  font-size: 1rem;
+}
+
+footer {
+  border-top: 1px solid var(--rule-soft);
+  padding: 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+footer a { color: var(--muted); border: none; }
+footer a:hover { color: var(--ember); }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="/" class="nav-mark">Chaoskampf</a>
+  <a href="/" class="nav-back">← Back</a>
+</nav>
+
+<main>
+  <div class="eyebrow">Privacy Policy</div>
+  <h1>Privacy</h1>
+  <p class="updated">Last updated: <span id="updated"></span></p>
+
+  <p>
+    Chaoskampf ("we", "us", or "our") respects your privacy. This policy describes how we handle information in connection with our website at chaoskampf.co and any iOS applications we publish.
+  </p>
+
+  <h2>The website</h2>
+  <p>
+    This website does not collect personal information, set tracking cookies, or use third-party analytics. The site is hosted by GitHub Pages, which may log standard request metadata (such as IP addresses) for operational purposes; see GitHub's <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">privacy statement</a> for details.
+  </p>
+
+  <h2>Email contact</h2>
+  <p>
+    If you contact us by email, we will receive your email address and the contents of your message. We use this information only to respond to you. We do not share it with third parties or use it for marketing.
+  </p>
+
+  <h2>Our applications</h2>
+  <p>
+    Privacy practices for individual applications are documented separately within each app and in the relevant App Store listing. Any data handling specific to an app is described in that app's own privacy notice.
+  </p>
+
+  <h2>Changes to this policy</h2>
+  <p>
+    We may update this policy from time to time. Material changes will be reflected here with an updated revision date.
+  </p>
+
+  <h2>Contact</h2>
+  <p>
+    Questions about this policy can be sent to <a href="mailto:hello@chaoskampf.co">hello@chaoskampf.co</a>.
+  </p>
+</main>
+
+<footer>
+  <span>© <span id="year"></span> Chaoskampf</span>
+  <a href="/">chaoskampf.co</a>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  document.getElementById('updated').textContent = new Date().toLocaleDateString('en-GB', { year: 'numeric', month: 'long', day: 'numeric' });
+</script>
+
+</body>
+</html>
