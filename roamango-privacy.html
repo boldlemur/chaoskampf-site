@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Privacy — Chaoskampf</title>
-<meta name="description" content="Privacy policy for Chaoskampf.">
+<title>Roamango Privacy — Chaoskampf</title>
+<meta name="description" content="Privacy policy for the Roamango iOS app.">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -150,34 +150,56 @@ footer a:hover { color: var(--ember); }
 
 <nav>
   <a href="/" class="nav-mark">Chaoskampf</a>
-  <a href="/" class="nav-back">← Back</a>
+  <a href="/privacy.html" class="nav-back">← Privacy</a>
 </nav>
 
 <main>
   <div class="eyebrow">Privacy Policy</div>
-  <h1>Privacy</h1>
+  <h1>Roamango</h1>
   <p class="updated">Last updated: 11 July 2026</p>
 
   <p>
-    Chaoskampf ("we", "us", or "our") respects your privacy. This policy describes how we handle information in connection with our website at chaoskampf.co and any iOS applications we publish.
+    Roamango is an iOS app by Chaoskampf that turns your photo library into animated travel reels. It is built to be private by design: there are no accounts, no ads, and no Chaoskampf servers. Your photos are processed entirely on your device and are never uploaded to us — we could not see them even if we wanted to.
   </p>
 
-  <h2>The website</h2>
+  <h2>Your photos</h2>
   <p>
-    This website does not collect personal information, set tracking cookies, or use third-party analytics. The site is hosted by GitHub Pages, which may log standard request metadata (such as IP addresses) for operational purposes; see GitHub's <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">privacy statement</a> for details.
+    Roamango requests read-only access to your photo library through Apple's PhotoKit framework. Scanning, trip detection, photo scoring, and reel rendering all happen on your device. The app never modifies your library, and neither your photos nor their metadata are transmitted to Chaoskampf. Finished reels are saved on your device and leave it only when you choose to share them.
   </p>
 
-  <h2>Email contact</h2>
+  <h2>Location data in your photos</h2>
   <p>
-    If you contact us by email, we will receive your email address and the contents of your message. We use this information only to respond to you. We do not share it with third parties or use it for marketing.
+    The app reads the GPS metadata embedded in your photos to detect where you have travelled. This processing happens entirely on your device. The places you have visited are not sent to Chaoskampf. The two narrow exceptions — map imagery and place-name lookups — are described below.
   </p>
 
-  <h2>Our applications</h2>
+  <h2>Maps</h2>
   <p>
-    Privacy practices for individual applications are documented in each app's own privacy policy, linked from the app and its App Store listing:
+    Map imagery is provided by <a href="https://www.mapbox.com/legal/privacy">Mapbox</a>. When you view a map or create a reel, the app requests map tiles from Mapbox's servers. Like any web request, these include your IP address, and the map areas requested correspond to the regions shown on screen. The Mapbox SDK may also collect anonymised usage telemetry to improve its maps; you can opt out via the telemetry setting in the map's attribution (ⓘ) menu.
   </p>
+
+  <h2>Place names</h2>
   <p>
-    <a href="/roamango-privacy.html">Roamango — privacy policy</a>
+    To name the places in your reels, Roamango first uses an offline place database bundled with the app. If no match is found there, the app may ask Apple's geocoding service for a name, which involves sending approximate coordinates to Apple. See <a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a> for how Apple handles such requests.
+  </p>
+
+  <h2>Analytics</h2>
+  <p>
+    We use <a href="https://telemetrydeck.com/privacy/">TelemetryDeck</a> to collect anonymous usage signals — for example, that a reel was created or a setting was changed. These signals contain no personal identifiers and never include your photos, their metadata, your location, or the places you have travelled. TelemetryDeck cannot track you across apps.
+  </p>
+
+  <h2>Device location</h2>
+  <p>
+    Roamango can optionally use your device's location to show where you are on the map. This requires your explicit permission, is used only to display your position, and is never stored or transmitted.
+  </p>
+
+  <h2>Data storage and deletion</h2>
+  <p>
+    Everything Roamango knows — detected trips, settings, caches — is stored on your device. There is nothing to delete on any server: removing the app removes all of its data.
+  </p>
+
+  <h2>Beta versions</h2>
+  <p>
+    If you use a beta version of Roamango through Apple's TestFlight, Apple shares with us any feedback you choose to send, along with crash logs and basic device information, as described in the TestFlight terms presented when you join.
   </p>
 
   <h2>Changes to this policy</h2>
